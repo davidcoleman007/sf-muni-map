@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import './App.scss';
-import { Map } from './components/Map/Map';
+import { Map } from './components/common/Map';
 
 class App extends Component {
   render() {

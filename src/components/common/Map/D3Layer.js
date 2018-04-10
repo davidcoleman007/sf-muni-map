@@ -4,7 +4,7 @@ import autoBind from 'react-autobind';
 
 import { geoMercator, geoPath } from "d3-geo"
 
-export class D3Map extends Component {
+export class D3Layer extends Component {
 
   static propTypes = {
     /**
