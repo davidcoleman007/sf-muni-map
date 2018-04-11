@@ -6,7 +6,6 @@ export const VEHICLE_LOCATIONS_COMMAND = 'vehicleLocations';
 export const vehicleLocationsCommandParams = (routeTag='sf-muni', sinceTime=(new Date().getTime()-15000)) => {
   return {
     a: routeTag,
-    r: 'N',
     t: sinceTime
   }
 };
