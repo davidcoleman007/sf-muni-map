@@ -1,5 +1,5 @@
-export const SET_NEIGHBORHOODS = 'SET_NEIGHBORHOODS';
+export const SET_MUNI_LOCS = 'SET_MUNI_LOCS';
 
-export const setNeighborhoods = (data) => {
-  return { type: SET_NEIGHBORHOODS, data };
+export const setMuniLocs = (data) => {
+  return { type: SET_MUNI_LOCS, data };
 };

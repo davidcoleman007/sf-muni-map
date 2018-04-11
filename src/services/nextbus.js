@@ -12,8 +12,8 @@ export const vehicleLocationsCommandParams = (routeTag='sf-muni', sinceTime=(new
 };
 
 export const fetchCommand = (command, params) => {
-  const szParams = Object.entries(params).map(([key,value])=>`?${key}=${value}`).join('');
-  return resolver(`${NEXT_BUS_BASE_URL}?${CMD_PARAM}=${command}${szParams}`)
+  const szParams = Object.entries(params).map(([key,value])=>`${key}=${value}`).join('&');
+  return resolver(`${NEXT_BUS_BASE_URL}?${CMD_PARAM}=${command}&${szParams}`)
 };
 
 

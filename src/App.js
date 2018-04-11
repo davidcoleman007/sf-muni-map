@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import './App.scss';
-import { Map } from './components/common/Map';
+import { SFMap } from './components/SFMap';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="App-intro">
-          <Map size={[500,500]}/>
+          <SFMap height={768} width={1024}/>
         </div>
       </div>
     );

@@ -4,7 +4,7 @@ import autoBind from 'react-autobind';
 
 import { geoMercator, geoPath } from "d3-geo"
 
-export class D3Layer extends Component {
+export class D3GeoLayer extends Component {
 
   static propTypes = {
     /**
@@ -53,8 +53,8 @@ export class D3Layer extends Component {
           const mapPath = <path
             d={geoGenerator(feature)}
             style={style}
-            key={p.id}
-            stroke-width="0.25"
+            key={`${p.id}_${idx}`}
+            strokeWidth="0.25"
             stroke="black"
           />
 
